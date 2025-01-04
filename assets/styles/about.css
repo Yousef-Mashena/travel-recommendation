@@ -1,0 +1,20 @@
+.about-paragraph {
+  font-size: 1.1rem;
+}
+
+.member-container > p:nth-child(4) {
+  background-color: #224284;
+  text-align: center;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 4px;
+  margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .member-container > p:nth-child(4) {
+    width: 25%;
+    margin: 0 15%;
+  }
+}

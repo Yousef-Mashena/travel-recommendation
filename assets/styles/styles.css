@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('../images/bg-sm.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+  background-image: linear-gradient(127deg, #101f21 65%, #4b4b48);
+  position: relative;
+}
+
+.logo img {
+  display: none;
+}
+
+.logo p {
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+}
+
+main {
+  margin: 32px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+main p {
+  font-size: 1.3rem;
+  line-height: 150%;
+}
+
+.page-nav {
+  background-color: black;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.page-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 5%;
+}
+
+.page-nav a:hover {
+  color: rgba(255, 255, 255, 0.411);
+}
+
+button {
+  background-color: #01696b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    background-image: linear-gradient(
+      127deg,
+      hsla(187, 33%, 10%, 0.705) 65%,
+      #4b4b48
+    );
+  }
+
+  .logo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-height: 100%;
+  }
+
+  .logo p {
+    align-self: center;
+    margin-left: 8px;
+  }
+
+  .logo img {
+    display: block;
+    max-width: 100%;
+  }
+
+  body {
+    background-image: url('../images/bg-lg.jpg');
+    background-position: center;
+  }
+}

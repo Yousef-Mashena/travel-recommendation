@@ -1,0 +1,30 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px;
+}
+
+fieldset button {
+  padding: 4px 0;
+}
+
+textarea {
+  height: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    display: flex;
+    align-items: center;
+    gap: 35%;
+  }
+
+  h1 {
+    white-space: nowrap;
+  }
+
+  form {
+    width: 100%;
+  }
+}

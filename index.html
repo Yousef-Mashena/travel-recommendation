@@ -5,36 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
     <header>
-      <div class="logo min-size">
+      <div class="logo">
         <img src="./assets/images/logo.svg" alt="" />
         <p>Travel Bloom</p>
       </div>
-      <nav class="page-nav">
-        <a href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Contact Us</a>
-      </nav>
-      <div class="dropdown">
+
+      <div id="dropdown" class="dropdown">
         <img src="./assets/images/dropdown.svg" alt="" />
       </div>
 
-      <form action="">
+      <form>
         <fieldset>
           <input
+            id="search-bar"
             type="text"
             placeholder="Enter a destination or keyword"
             role="search"
           />
           <img src="" alt="" />
-          <button>Search</button>
-          <button>Clear</button>
+          <button id="search" type="button">Search</button>
+          <button id="clear" type="reset">Clear</button>
         </fieldset>
       </form>
     </header>
+    <nav class="page-nav">
+      <a href="#">Home</a>
+      <a href="./about.html">About Us</a>
+      <a href="./contact.html">Contact Us</a>
+    </nav>
+    <div id="search-results" class="search-results"></div>
     <main>
       <h1>EXPLORE DREAM DESTINATION</h1>
       <p>
@@ -58,5 +62,7 @@
         ><img class="social" src="./assets/images/youtube.svg" alt=""
       /></a>
     </nav>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
